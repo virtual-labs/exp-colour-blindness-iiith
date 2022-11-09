@@ -3,21 +3,43 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Simon Task</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
     <title>Color Blindness</title>
     <link rel="stylesheet" href="../css/cb.css">
 </head>
 
 <body>
-    <center>
-        <div>
-            <font style = "color:black" face = "Comic Sans MS"><h1><center>How Color Blind population percieve colors?</center></h1></font>
-            <center><input type="button" id="protonopia" value="PROTONOPIA" onclick="protonopia()"></button></center>
-            <center><input type="button" id="tritanopia" value="TRITANOPIA" onclick="tritanopia()"></button></center>
-            <center><input type="button" id="totalcolorblind" value="TOTAL COLOR BLIND" onclick="totalcolorblind()"></button></center>
-            <img id="img" src="../images/trafficlight.jpg" alt="img" width="218" height="190">
-            <canvas id="myCanvas" width="218" height="190" style="border:1px solid #d3d3d3;"></canvas>
-            <center><a href="../index.html"><button>Go to home</button></a></center>
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column">
+                <div class="v-collapsible-instruction-container v-instruction-container">
+                    <div id="instruction-title" class="v-collapsible is-size-5">Instructions<br>To see different types of colorblindness</div>
+                    <div class="v-content" style="text-align: left; padding-left: 10%; padding-right: 10%;">
+                        <ul style="list-style: disc;">
+                            <li>Click on any of the button to see how the image looks like.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+        <div class="buttons">
+            <!-- <h1><font style = "color:black" face = "Comic Sans MS"><center>How Color Blind population percieve colors?</center></font></h1> -->
+            <button class="v-button" id="protonopia" onclick="protonopia()">Protonopia</button>
+            <button class="v-button" id="tritanopia" onclick="tritanopia()">Tritanopia</button>
+            <button class="v-button" id="totalcolorblind" onclick="totalcolorblind()">Total color blind</button>
+        </div>
+            <div class="img">
+                <center><img id="img" src="../images/trafficlight.jpg" alt="img" width="201" height="175">
+                <canvas id="myCanvas" width="201" height="175" ></canvas></center>
+            </div>
+                <center><a href="../index.html"><button class="v-button">Go to home</button></a></center>
+                <script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
     <script src="../js/cb_main.js"></script>
     <style></style>
     

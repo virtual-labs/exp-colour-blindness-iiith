@@ -19,7 +19,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "Does this image represent color blindness? <img src = ./images/monochrome.png>",
+        "question": "Does this image represent color blindness? <img src = 'images/monochrome.png'>",
         "answers": {
           "a": "YES",
           "b": "NO",

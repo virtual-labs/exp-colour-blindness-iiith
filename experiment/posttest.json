@@ -2,11 +2,11 @@
     "version": 2.0,
     "questions": [
       {
-        "question": "Which of the following images correspondes to the protonopic version of the image below? <img src = 'images/rainbow.png>",
+        "question": "Which of the following images correspondes to the protonopic version of the image below? <img src = 'images/rainbow.jpg>",
         "answers": {
-          "a": "<img src = 'images/rainbow_cb.png'>",
-          "b": "<img src = 'images/rainbow_proto.png'>",
-          "c": "<img src = 'images/rainbow_trita.png'>",
+          "a": "<img src = 'images/rainbow_cb.jpg'>",
+          "b": "<img src = 'images/rainbow_proto.jpg'>",
+          "c": "<img src = 'images/rainbow_trita.jpg'>",
           "d": "None of These"
         },
         "explanations": {
@@ -19,7 +19,7 @@
         "difficulty": "medium"
       },
       {
-        "question": "Which type of color blindness does this image represent? <img src = 'images/rainbow_trita.png'>",
+        "question": "Which type of color blindness does this image represent? <img src = 'images/rainbow_trita.jpg'>",
         "answers": {
           "a": "Protonopia",
           "b": "Tritanopia",

@@ -1,0 +1,37 @@
+{
+    "version": 2.0,
+    "questions": [
+      {
+        "question": "Choose the option which does not represents color blindness",
+        "answers": {
+          "a": "Monochromatic",
+          "b": "Duetronopia",
+          "c": "Tritanopia",
+          "d": "Protonopia"
+        },
+        "explanations": {
+          "a": "",
+          "b": "",
+          "c": "",
+          "d": ""
+        },
+        "correctAnswer": "a",
+        "difficulty": "beginner"
+      },
+      {
+        "question": "Does this image represent color blindness? <img src = 'images/monochrome.jpg'>",
+        "answers": {
+          "a": "YES",
+          "b": "NO",
+          "c": "Can't say"
+        },
+        "explanations": {
+          "a": "",
+          "b": "",
+          "c": ""
+        },
+        "correctAnswer": "b",
+        "difficulty": "beginner"
+      }
+    ]
+ }

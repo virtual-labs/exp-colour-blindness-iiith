@@ -1,52 +1,57 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-    <meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>Color Blind Simulator</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
-    <title>Color Blindness</title>
-    <link rel="stylesheet" href="./css/cb.css">
+  <title>Color Blindness Simulator</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
+  <link rel="stylesheet" href="./css/cb.css">
 </head>
-
 <body>
-    <div class="sc">
-		<div class="container">
-			<div class="columns is-centered">
-				<div class="column">
-					<div class="v-collapsible-instruction-container v-instruction-container">
-						<div id="instruction-title" class="v-collapsible is-size-5">Instructions<br>To percieve how color blind people see world</div>
-						<div class="v-content" style="text-align: left; padding-left: 10%; padding-right: 10%;">
-							<ul style="list-style: disc;">
-								<li>Click on any of the following images</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	</div>
-    <center>
-        <div>
-            <div class="para"> 
-                <center>How Color Blind population percieve colors?</center>
-            </div>
-            <div class = "img">
-                <a href="./html/cb_holi.html"><img id="img" src="./images/holi.jpg" alt="img" width="218" height="190"></a>
-                <a href="./html/cb_pepsi.html"><img id="img" src="./images/pepsi.jpg" alt="img" width="218" height="190"></a>
-                <a href="./html/cb_trafficlight.html"><img id="img" src="./images/trafficlight.jpg" alt="img" width="218" height="190"></a>
-                <a href="./html/cb_woman.html"><img id="img" src="./images/woman.jpg" alt="img" width="218" height="190"></a>
-            </div>
-        </div>
-        </center>
-    <script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>    
-    <script src="./js/cb_main.js"></script>
-    <style></style>
+  <div class="v-collapsible-instruction-container v-instruction-container">
+    <div id="instruction-title" class="v-collapsible is-size-5">Instructions<br>To use Colour Blindness Simulator</div>
+    <div class="v-content">
+      <ul style="list-style: disc; text-align:left">
+        <li> You can choose any image and click on it.</li>
+        <li> After selecting the image, you can choose the button specific to a type of colour blindness to see how that image will appear to a person with that type of colour blindness.</li>
+        <li> You can also add images from your desktop to see how it will look like in different cases of colour blindess.</li>
+      </ul>
+    </div>
+  </div>
+  <center><h1>Color Blindness Simulator</h1></center>
+  <div class="thumbnails-container">
+    <div class="thumbnail-row">
+      <img class="image-thumbnail" src="./images/cr7.jpg" alt="Image 1">
+      <img class="image-thumbnail" src="./images/GTA.png" alt="Image 2">
+      <img class="image-thumbnail" src="./images/holi.jpg" alt="Image 3">
+      <img class="image-thumbnail" src="./images/minecraft.png" alt="Image 4">
+    </div>
+    <div class="thumbnail-row">
+      <img class="image-thumbnail" src="./images/pencil.jpg" alt="Image 5">
+      <img class="image-thumbnail" src="./images/rainbow.jpg" alt="Image 6">
+      <img class="image-thumbnail" src="./images/RM.jpg" alt="Image 7">
+      <img class="image-thumbnail" src="./images/trafficlight.jpg" alt="Image 8">
+    </div>
+  </div>
+  
+  <div id="canvas">
+    <center><canvas id="imageCanvas"></canvas></center>
     
+    <div id="controls">
+      <button class="v-button" id="protonopiaBtn">Protonopia</button>
+      <button class="v-button" id="tritanopiaBtn">Tritanopia</button>
+      <button class="v-button" id="colorblindBtn">Color Blind</button>
+    </div>
+  </div>
+  
+  <div>
+    <h2><center><h3>Select an Image from Your System:</h2></center>
+    <center><input type="file" id="imageFile" accept="image/*"></center>
+  </div>
+  <br>
+  <div>
+    <center><button class="v-button" onClick = "window.location.reload();">Try Again</button></center>
+  </div>
+  <script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
+  <script src="./js/cb_main.js"></script>
 </body>
 </html>
+

@@ -1,0 +1,76 @@
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+#canvasScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#canvas {
+  margin-top: 20px;
+}
+
+.thumbnails-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnail-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.image-thumbnail {
+  width: 300px; 
+  height: 250px; 
+  margin: 5px;
+  cursor: pointer;
+}
+
+#canvas {
+  display: none;
+  margin-top: 20px;
+}
+
+#imageCanvas {
+  max-width: 100%;
+  height: auto;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+input[type="file"] {
+  margin-top: 10px;
+}
+
+.instructions-box {
+  max-height: 70px;
+  overflow: hidden;
+  transition: all .5s ease;
+}
+
+.instructions-box.expand {
+  max-height: 400px;
+}
+
+.v-instruction-container {
+  border:.2rem solid #97d23d;
+  justify-content: flex-start;
+  width: 80%;
+  margin: 0 auto;
+}

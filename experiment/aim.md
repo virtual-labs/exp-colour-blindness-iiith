@@ -1,3 +1,2 @@
 ### Aim of the Experiment
-Understand what it is like to be colour blind and how a colour-blind person will perceive colours in the real world.<br>
-How the colour-blindness will have its impact on product branding, perception, and user experience of the graphical user interfaces of software and IT products/Apps.<br>
+To understand how people with color blindness see colors and how it affects their experience with everyday things like product branding, perception, and user experience of the graphical user interfaces of software and IT products/Apps.The goal is to find ways to make designs easier for everyone to use, no matter how they see colors.<br />

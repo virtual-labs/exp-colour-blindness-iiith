@@ -1,39 +1,56 @@
 {
-    "version": 2.0,
-    "questions": [
-      {
-        "question": "Which of the following images correspondes to the protonopic version of the image below? <img src = 'images/rainbow.jpg'>",
-        "answers": {
-          "a": "<img src = 'images/rainbow_cb.jpg'>",
-          "b": "<img src = 'images/rainbow_proto.jpg'>",
-          "c": "<img src = 'images/rainbow_trita.jpg'>",
-          "d": "None of These"
-        },
-        "explanations": {
-          "a": "",
-          "b": "",
-          "c": "",
-          "d": ""
-        },
-        "correctAnswer": "b",
-        "difficulty": "medium"
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which of the following images correspondes to the protonopic version of the image below? <img src = 'images/rainbow.jpg'>",
+      "answers": {
+        "a": "<img src = 'images/rainbow_cb.jpg'>",
+        "b": "<img src = 'images/rainbow_proto.jpg'>",
+        "c": "<img src = 'images/rainbow_trita.jpg'>",
+        "d": "None of These"
       },
-      {
-        "question": "Which type of color blindness does this image represent? <img src = 'images/rainbow_trita.jpg'>",
-        "answers": {
-          "a": "Protonopia",
-          "b": "Tritanopia",
-          "c": "Full Color Blind",
-          "d": "None of these"
-        },
-        "explanations": {
-          "a": "",
-          "b": "",
-          "c": "",
-          "d": ""
-        },
-        "correctAnswer": "b",
-        "difficulty": "medium"
-      }
-    ]
- }
+      "explanations": {
+        "a": "This image represents the color vision of someone with general color blindness, not specifically Protonopia.",
+        "b": "Correct! This image represents how the given image appears to someone with Protonopia, a form of red-color blindness.",
+        "c": "This image represents Tritanopia (blue-color blindness), not Protonopia.",
+        "d": "This option is incorrect, as one of the options correctly shows the Protonopia version of the image."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which type of color blindness does this image represent? <br/> <img src = 'images/rainbow_trita.jpg'>",
+      "answers": {
+        "a": "Protonopia",
+        "b": "Tritanopia",
+        "c": "Full Color Blind",
+        "d": "None of these"
+      },
+      "explanations": {
+        "a": "This is incorrect. Protonopia affects red perception, but this image represents Tritanopia.",
+        "b": "Correct! This image shows how the given image appears to someone with Tritanopia (blue-color blindness).",
+        "c": "This option is incorrect. Total color blindness would show the image in shades of gray.",
+        "d": "This option is incorrect because the image represents Tritanopia, one of the color blindness types."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which of the following properties is associated with total color blindness (achromatopsia)?",
+      "answers": {
+        "a": "Complete inability to perceive any colors, only shades of gray",
+        "b": "Difficulty distinguishing between specific colors, such as red and green",
+        "c": "Normal color vision but reduced clarity of vision",
+        "d": "Enhanced ability to see colors in dim lighting"
+      },
+      "explanations": {
+        "a": "Correct! Total color blindness (achromatopsia) means the complete inability to perceive colors, resulting in a grayscale view of the world.",
+        "b": "Incorrect. This describes partial color blindness, such as Deuteranopia or Protonopia, not total color blindness.",
+        "c": "Incorrect. Reduced clarity of vision may sometimes accompany achromatopsia, but this is not the defining characteristic.",
+        "d": "Incorrect. Achromatopsia does not enhance color perception in dim lighting; it eliminates color perception altogether."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    }
+  ]
+}

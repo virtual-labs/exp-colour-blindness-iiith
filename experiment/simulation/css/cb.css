@@ -1,41 +1,26 @@
+/* Header Styles */
 h1 {
   font-size: 48px;
   font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 h2 {
   font-size: 24px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #555;
 }
 
+/* Canvas Styles */
 #canvasScreen {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
-
-#canvas {
-  margin-top: 20px;
-}
-
-.thumbnails-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.thumbnail-row {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-  width: 100%;
-}
-
-.image-thumbnail {
-  width: 300px; 
-  height: 250px; 
-  margin: 5px;
-  cursor: pointer;
+  padding: 20px;
 }
 
 #canvas {
@@ -43,34 +28,133 @@ h2 {
   margin-top: 20px;
 }
 
-#imageCanvas {
-  max-width: 100%;
-  height: auto;
+#imageCanvas{
+  width:50%;
 }
 
+@media only screen and (max-width: 800px) {
+  #imageCanvas{
+    width:80%;
+  }
+}
+
+/* Thumbnails Styles */
+.thumbnails-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.thumbnail-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.image-thumbnail {
+  width: 300px;
+  height: 250px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-thumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Controls Styles */
 #controls {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 30px;
+  gap: 15px;
 }
 
 input[type="file"] {
-  margin-top: 10px;
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+  transition: all 0.3s ease;
 }
 
+input[type="file"]:hover {
+  border-color: #97d23d;
+}
+
+/* Instructions Box */
 .instructions-box {
   max-height: 70px;
   overflow: hidden;
-  transition: all .5s ease;
+  padding: 15px;
+  background-color: #e8f4e8;
+  border: 2px solid #97d23d;
+  border-radius: 8px;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
 }
 
 .instructions-box.expand {
   max-height: 400px;
+  padding-bottom: 20px;
 }
 
+/* Instruction Container */
 .v-instruction-container {
-  border:.2rem solid #97d23d;
-  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 0.2rem solid #97d23d;
   width: 80%;
-  margin: 0 auto;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.v-instruction-container ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.v-instruction-container li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Button Styles */
+button {
+  background-color: #97d23d;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #7bb32f;
+}
+
+.v-collapsible:after {
+  content: '\2193'; /* Downward arrow */
+  font-weight: bold;
+  color: #ff0000;
+}
+
+body{
+  margin-bottom: 30px;
 }

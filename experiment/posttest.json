@@ -19,18 +19,18 @@
       "difficulty": "intermediate"
     },
     {
-      "question": "Which type of color blindness does this image represent? <br/> <img src = 'images/rainbow_trita.jpg'>",
+      "question": "When using the simulator, what does clicking the “Tritanopia” button do?",
       "answers": {
-        "a": "Protonopia",
-        "b": "Tritanopia",
-        "c": "Full Color Blind",
-        "d": "None of these"
+        "a": "Displays how someone with green-color blindness sees the image",
+        "b": "Displays how someone with blue-color blindness sees the image",
+        "c": "Displays how the image would look in grayscale",
+        "d": "Displays how someone with normal color vision sees the image"
       },
       "explanations": {
-        "a": "This is incorrect. Protonopia affects red perception, but this image represents Tritanopia.",
+        "a": "This is incorrect. Deuteranopia affects green perception, not blue. Tritanopia is related to blue-color blindness.",
         "b": "Correct! This image shows how the given image appears to someone with Tritanopia (blue-color blindness).",
-        "c": "This option is incorrect. Total color blindness would show the image in shades of gray.",
-        "d": "This option is incorrect because the image represents Tritanopia, one of the color blindness types."
+        "c": "This option is incorrect. Total color blindness (monochromacy) would show the image in shades of gray.",
+        "d": "This option is incorrect because the image represents Tritanopia, not normal color vision."
       },
       "correctAnswer": "b",
       "difficulty": "intermediate"
